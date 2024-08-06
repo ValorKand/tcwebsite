@@ -1,0 +1,164 @@
+@import url("Matrix-Book.css");
+
+.bocadito {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.bocadito a {
+    color: #ffffff;
+}
+
+.bocadito .column.row {
+    padding-top: 1.1%;
+    padding-bottom: 0.1%;
+}
+
+/* Formato para textos */
+
+.justificado {
+    text-align: justify;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.tabulacion {
+    padding-left: 40px;
+}
+
+#mainTitle,
+#subTitle,
+#secondTitle,
+#secondsubTitle,
+#thirdTitle,
+#thirdsubTitle {
+    font-family: Matrix-Book;
+}
+
+#mainTitle {
+    font-weight: bold;
+    background-color: #3f51b5;
+    margin: 5%;
+    border-radius: 50px;
+    padding-bottom: 10px;
+}
+
+#secondTitle {
+    font-weight: bold;
+    margin: 5%;
+    border-radius: 50px;
+    padding-bottom: 5px;
+}
+
+#mainTitle span {
+    font-size: 150%;
+}
+
+#secondTitle span {
+    font-size: 150%;
+}
+
+#secondTitle.bachillerato span {
+    font-size: 50px;
+    line-height: 0px;
+}
+
+#subTitle {
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+
+#thirdTitle {
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+#secondTitle.preescolar,
+#thirdTitle.preescolar {
+    background-color: #f48fb1;
+}
+
+#secondTitle.primaria,
+#thirdTitle.primaria {
+    background-color: #7e57c2;
+}
+
+#secondTitle.secundaria,
+#thirdTitle.secundaria {
+    background-color: #8bc34a;
+}
+
+#secondTitle.bachillerato,
+#thirdTitle.bachillerato {
+    background-color: #304ffe;
+    font-size: 40px;
+}
+
+#secondTitle.acercade {
+    font-size: 40px;
+}
+
+#secondsubTitle {
+    background-color: #ffffff;
+    color: #000000;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+
+#subTitle span {
+    font-size: 150%;
+}
+
+.ui.ajustado.image {
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 479px) {
+    #mainTitle {
+        padding-top: 5%;
+    }
+}
+
+/*fondos de las secciones*/
+
+#headIndex {
+    background-image: url("../.././img/ui/pagina/itheader.png");
+    background-size: cover;
+}
+
+#headPreescolar {
+    background-image: url("../.././img/ui/pagina/preescolarheader.png");
+    background-size: cover;
+}
+
+#headPrimaria {
+    background-image: url("../.././img/ui/pagina/primariaheader.png");
+    background-size: cover;
+}
+
+#headSecundaria {
+    background-image: url("../.././img/ui/pagina/secundariaheader.png");
+    background-size: cover;
+}
+
+#headBachillerato {
+    background-image: url("../.././img/ui/pagina/bachilleratoheader.jpg");
+    background-size: cover;
+}

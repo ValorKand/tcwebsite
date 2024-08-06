@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"/>
+        <meta name="description" content="Sitio Web Oficial de Táctico Coyote 🐺🇲🇽" />
+        <meta name="keywords" content="táctico, seguridad, mexico, tabasco, chiapas, palenque, militar, policia" />
+        <meta name="author" content="Vales Corp" />
+        <title>Táctico Coyote | Sitio Web Oficial 🐺🇲🇽</title>
+        <link rel="shortcut icon" href="./img/ui/pagina/favicon.ico"></link>
+        <link rel="stylesheet" href="./src/semantic/semantic.css"></link>
+        <link rel="stylesheet" href="./src/css/body.css"></link>
+        <link rel="stylesheet" href="./src/css/slider.css"></link>
+        <link rel="stylesheet" href="./src/css/componentes.css"></link>
+        <link rel="stylesheet" href="./src/css/riel.css"></link>
+        <link rel="stylesheet" href="./src/sfsymbols/sfsymbols.css"></link>
+        <link rel="stylesheet" href="./src/css/coyote.css"></link>
+    </head>
+    <body id="root">
+        <!--Este es el riel de navegación para pc -->
+        <div class="nav-rail">
+            <a href="#buscar" class="nav-item">
+                <div class="ui circular coyote button">
+                    <i class="ui icono magnifyingglass"></i>
+                </div>
+            </a>
+            <a href="#inicio" class="nav-item">
+                <i class="icono invertido house"></i>
+                <span>Inicio</span>
+            </a>
+            <a href="#productos" class="nav-item">
+                <i class="icono invertido bag"></i>
+                <span>Productos</span>
+            </a>
+            <a href="#sucursales" class="nav-item">
+                <i class="icono invertido mappin and ellipse"></i>
+                <span>Sucursales</span>
+            </a>
+            <a href="#quienessomos" class="nav-item">
+                <i class="icono invertido coyote"></i>
+                <span>Quiénes somos</span>
+            </a>
+            <a href="#whatsapp" class="nav-item">
+                <i class="ui whatsapp icon"></i>
+                <span>Whatsapp</span>
+            </a>
+            <a href="#redes" class="nav-item">
+                <i class="ui facebook icon"></i>
+                <span>Redes</span>
+            </a>
+        </div>
+        <div class="pusher">
+            <div class="ui grid">
+                <div class="computer only column">
+                    <div class="ui inverted segment">
+                        <div class="ui two column grid">
+                            <div class="ui column">
+                                <div class="ui inverted elemento segment">
+                                    <img src="./src/img/tacticologo.png" class="ui ajustado image"/>
+                                    <h1>En Táctico Coyote, manejamos una amplia
+                                        gama de artículos de venta libre para civiles
+                                        como para miembros de distintas instituciones de
+                                        seguridad
+                                    </h1>
+                                    <a class="ui huge coyote circular button">Conócenos</a>
+                                </div>
+                            </div>
+                            <!-- aquí es el slider del index para pc -->
+                            <div class="ui column">
+                                <div class="ui inverted segment">
+                                    <section id="container-slider">
+                                        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="arrow circle left icon"></i></a>
+                                        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="arrow circle right icon"></i></a>
+                                        <ul class="listslider">
+                                            <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                                            <li><a itlist="itList_1" href="#"></a></li>
+                                            <li><a itlist="itList_2" href="#"></a></li>
+                                        </ul>
+                                        <ul class="slide" id="slider">
+                                            <li class="blurring dimmable image" style="background-image: url('./src/img/1.png'); z-index:0; opacity: 1;">
+                                                <div class="ui inverted dimmer">
+                                                    <div class="content">
+                                                        <div class="center">
+                                                            <div class="content_slider">
+                                                                <!-- Aquí puede ir contenido de texto para el slider -->
+                                                                <button class="ui inverted button">Ver más</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="blurring dimmable image" style="background-image: url('./src/img/2.png'); ">
+                                                <div class="ui inverted dimmer">
+                                                    <div class="content">
+                                                        <div class="center">
+                                                            <div class="content_slider">
+                                                                <!-- Aquí puede ir contenido de texto para el slider -->
+                                                                <button class="ui inverted button">Ver más</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="blurring dimmable image" style="background-image: url('./src/img/3.png'); ">
+                                                <div class="ui inverted dimmer">
+                                                    <div class="content">
+                                                        <div class="center">
+                                                            <div class="content_slider">
+                                                                <!-- Aquí puede ir contenido de texto para el slider -->
+                                                                <button class="ui inverted button">Ver más</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                       </ul>
+                                     </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui inverted segment">
+                        <h1>Novedades y Catálogo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+        <script src="./src/js/riel.js"></script>
+        <script src="./src/js/slider.js"></script>
+        <script scr="./src/js/funciones.js"></script>
+    </body>
+</html>
