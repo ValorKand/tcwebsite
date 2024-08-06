@@ -1,0 +1,390 @@
+/* sfsymbols.css */
+
+@font-face {
+    font-family: "sfsymbols";
+    src: url("../font/sfsymbols.eot?76300679");
+    src:
+        url("../font/sfsymbols.eot?76300679#iefix") format("embedded-opentype"),
+        url("../font/sfsymbols.woff2?76300679") format("woff2"),
+        url("../font/sfsymbols.woff?76300679") format("woff"),
+        url("../font/sfsymbols.ttf?76300679") format("truetype"),
+        url("../font/sfsymbols.svg?76300679#sfsymbols") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Propiedades del ícono */
+i.icono {
+    display: inline-block;
+    opacity: 1;
+    margin: 0em 0.25rem 0em 0em;
+    width: 1.18em;
+    height: 1em;
+    font-family: "iconos";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    text-align: center;
+    speak: none;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+i.icono:before {
+    background: none !important;
+}
+
+/* Tipos */
+i.icono.loading {
+    height: 1em;
+    line-height: 1;
+}
+i.icono.loading {
+    -webkit-animation: icono-cargando 2s linear infinite;
+    animation: icono-cargando 2s linear infinite;
+}
+@-webkit-keyframes icono-cargando {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes icono-cargando {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* estados */
+i.icono.hover {
+    opacity: 1 !important;
+}
+i.icono.active {
+    opacity: 1 !important;
+}
+i.emphasized.icono {
+    opacity: 1 !important;
+}
+i.disabled.icono {
+    opacity: 0.45 !important;
+}
+
+/* variaciones */
+/*-------------------
+    Ajustado (sin espacios a la izquierda y derecha
+--------------------*/
+
+i.ajustado.icono {
+    width: auto;
+    margin: 0em !important;
+}
+
+/*-------------------
+    Enlace (ícono con formato de enlace)
+--------------------*/
+
+i.enlace.icono,
+i.enlace.iconos {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s ease;
+}
+i.enlace.icono:hover,
+i.enlace.iconos:hover {
+    opacity: 1 !important;
+}
+
+/*-------------------
+    Circular
+--------------------*/
+
+i.circular.icono {
+    border-radius: 500em !important;
+    line-height: 1 !important;
+    padding: 0.5em 0em !important;
+    box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
+    width: 2em !important;
+    height: 2em !important;
+}
+i.circular.invertido.icono {
+    border: none;
+    box-shadow: none;
+}
+
+/*-------------------
+    Volteado
+--------------------*/
+
+i.volteado.icono,
+i.horizontalmente.volteado.icono {
+    transform: scale(-1, 1);
+}
+i.verticalmente.volteado.icono {
+    transform: scale(1, -1);
+}
+
+/*-------------------
+    Rotado
+--------------------*/
+
+i.rotado.icono,
+i.derecha.rotado.icono,
+i.dextrogiro.rotated.icono {
+    transform: rotate(90deg);
+}
+i.izquierda.rotado.icono,
+i.levogiro.rotated.icono {
+    transform: rotate(-90deg);
+}
+
+/*-------------------
+    Bordeado
+--------------------*/
+
+i.bordeado.icono {
+    line-height: 1;
+    vertical-align: baseline;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em 0em !important;
+    box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
+}
+i.bordeado.invertido.icono {
+    border: none;
+    box-shadow: none;
+}
+
+/*-------------------
+    Tamaños
+--------------------*/
+
+/*-------------------
+    Invertido
+--------------------*/
+i.invertido.icono svg path {
+    fill: white;
+}
+
+i.mini.icono,
+i.mini.iconos {
+    line-height: 1;
+    font-size: 0.4em;
+}
+i.diminuto.icono,
+i.diminuto.iconos {
+    line-height: 1;
+    font-size: 0.5em;
+}
+i.chico.icono,
+i.chico.iconos {
+    line-height: 1;
+    font-size: 0.75em;
+}
+i.icono,
+i.iconos {
+    font-size: 1em;
+}
+i.amplio.icono,
+i.amplio.iconos {
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+i.grande.icono,
+i.grande.iconos {
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 2em;
+}
+i.enorme.icono,
+i.enorme.iconos {
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 4em;
+}
+i.masivo.icono,
+i.masivo.iconos {
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 8em;
+}
+
+/*******************************
+            Grupos
+*******************************/
+
+i.iconos {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+}
+i.iconos .icono {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0em;
+    margin: 0;
+}
+i.iconos .icono:first-child {
+    position: static;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+    transform: none;
+    margin-right: 0.25rem;
+}
+
+/* Íconos en esquina */
+i.iconos .esquina.icon {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    transform: none;
+    font-size: 0.45em;
+    text-shadow:
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+}
+i.iconos .encima.derecha.esquina.icono {
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: auto;
+}
+i.iconos .encima.izquierda.esquina.icono {
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+}
+i.iconos .fondo.izquierda.esquina.icono {
+    top: auto;
+    left: 0;
+    right: auto;
+    bottom: 0;
+}
+i.iconos .fondo.derecha.esquina.icono {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+}
+i.iconos .invertido.esquina.icono {
+    text-shadow:
+        -1px -1px 0 #1b1c1d,
+        1px -1px 0 #1b1c1d,
+        -1px 1px 0 #1b1c1d,
+        1px 1px 0 #1b1c1d;
+}
+
+/* Aquí comienza lo mero bueno. Importación de íconos
+ * se usa la etiqueta <i> para los iconos, seguido del nombre del archivo del ícono, respetando puntos
+ * toma como ejemplo la primera declaración del ícono:
+ * donde "i" es referencia a la etiqueta <i>,
+ * "icono" el nombre de la clase que aplica la propiedad para el ícono,
+ * seguido del nombre del archivo .svg y :before
+ * después en la etiqueta html la declaras con espacios
+ * <i class="icono square and arrow up"></i>
+ *
+ */
+
+i.icono.square.and.arrow.up:before {
+    content: url("./icons/square.and.arrow.up.svg");
+}
+
+i.icono.invertido.square.and.arrow.up:before {
+    content: url("./icons/square.and.arrow.up.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.xmark:before {
+    content: url("./icons/xmark.svg");
+}
+
+i.icono.invertido.xmark:before {
+    content: url("./icons/xmark.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.equal:before {
+    content: url("./icons/equal.svg");
+}
+
+i.icono.invertido.equal:before {
+    content: url("./icons/equal.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.chevron.down.circle.fill:before {
+    content: url("./icons/chevron.down.circle.fill.svg");
+}
+
+i.icono.invertido.chevron.down.circle.fill:before {
+    content: url("./icons/chevron.down.circle.fill.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.chevron.left:before {
+    content: url("./icons/chevron.left.svg");
+}
+
+i.icono.invertido.chevron.left:before {
+    content: url("./icons/chevron.left.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.house:before {
+    content: url("./icons/house.svg");
+}
+
+i.icono.invertido.house:before {
+    content: url("./icons/house.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.bag:before {
+    content: url("./icons/bag.svg");
+}
+
+i.icono.invertido.bag:before {
+    content: url("./icons/bag.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.coyote:before {
+    content: url("./icons/coyote.svg");
+}
+
+i.icono.invertido.coyote:before {
+    content: url("./icons/coyote.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.magnifyingglass:before {
+    content: url("./icons/magnifyingglass.svg");
+}
+
+i.icono.invertido.magnifyingglass:before {
+    content: url("./icons/magnifyingglass.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.mappin.and.ellipse:before {
+    content: url("./icons/mappin.and.ellipse.svg");
+}
+
+i.icono.invertido.mappin.and.ellipse:before {
+    content: url("./icons/mappin.and.ellipse.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
