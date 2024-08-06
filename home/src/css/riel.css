@@ -1,10 +1,12 @@
 body {
     margin: 0;
-    font-family: "SF Pro Display";
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     display: flex;
 }
 
 .nav-rail {
+    font-weight: bold;
+    text-align: center;
     width: 80px;
     background-color: #353535;
     display: flex;
@@ -22,6 +24,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: white;
+    /*esto mueve el espacio entre elementos del riel*/
     margin: 15px 0;
     transition: background-color 0.3s ease;
     padding: 10px;
@@ -57,4 +60,11 @@ body {
 
 .content h1 {
     margin-top: 0;
+}
+
+/*oculta el riel en móviles*/
+@media only screen and (max-width: 700px) {
+    .nav-rail {
+        display: none;
+    }
 }

@@ -388,3 +388,21 @@ i.icono.invertido.mappin.and.ellipse:before {
     content: url("./icons/mappin.and.ellipse.svg");
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
 }
+
+i.icono.ellipsis.circle:before {
+    content: url("./icons/ellipsis.circle.svg");
+}
+
+i.icono.invertido.ellipsis.circle:before {
+    content: url("./icons/ellipsis.circle.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}
+
+i.icono.line.three.horizontal:before {
+    content: url("./icons/line.3.horozontal.svg");
+}
+
+i.icono.line.three.horizontal:before {
+    content: url("./icons/line.3.horizontal.svg");
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+}

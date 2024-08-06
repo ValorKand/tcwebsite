@@ -4,6 +4,11 @@
     background-color: #f5cd2b;
 }
 
-.elemento {
+#botonConocenos {
+    margin-top: 8.5%;
+}
+
+.ui.elemento.segment {
     background-color: #353535;
+    border-radius: 35px;
 }

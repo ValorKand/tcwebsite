@@ -6,6 +6,13 @@ body {
     background: #000000;
 }
 
+/*esto controla los margenes del div principal llamado pusher*/
+.pusher {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
 .hidden.menu {
     display: none;
 }
@@ -136,8 +143,12 @@ body {
 
 /* Manipula las vistas para móvil y resoluciones similares */
 @media only screen and (max-width: 700px) {
-    .ui.fixed.menu {
+    /*.ui.fixed.menu {
         display: none !important;
+        }*/
+
+    .pusher {
+        margin-top: 20%;
     }
 
     .primary.pointing.menu .item,

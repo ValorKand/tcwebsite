@@ -18847,6 +18847,17 @@ ol.ui.horizontal.list li:before,
   color: #FFFFFF !important;
 }
 
+/* Trve Black */
+
+.ui.trve.black.segment:not(.inverted) {
+  border-top: 2px solid #000000 !important;
+}
+
+.ui.trve.inverted.black.segment {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
 /*-------------------
        Aligned
 --------------------*/
